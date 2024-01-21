@@ -1,11 +1,17 @@
+// App.tsx
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 
-function App() {
+
+function  App() {
   return (
-    <div> Teste commit
-    </div>
+    <Router>
+        <h1>Header e footer</h1>         
+        <Route path="/" element={<HomePage />} />
+    </Router>
   );
-}
+};
+
 
 export default App;
